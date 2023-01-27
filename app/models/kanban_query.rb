@@ -80,8 +80,8 @@ class KanbanQuery < IssueQuery
     # User.current.group_ids.each { |group_id| values.push(group_id.to_s) }
 
     {
-      'status_id' => { operator: 'o', values: [''] },
-      'assigned_to_id' => { operator: '=', values: ['me'] }
+      'status_id' => { operator: 'o', values: [] },
+      # 'assigned_to_id' => { operator: '=', values: ['me'] }
     }
   end
 

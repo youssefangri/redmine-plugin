@@ -19,7 +19,7 @@ Redmine::Plugin.register :redmine_kanban do
     permission :edit_checklists, { :questionlist => [:create, :update, :delete] }
   end
 
-  menu :project_menu, :kanban, { controller: 'kanban', action: 'index' }, caption: :label_kanban, after: :activity, param: :project_id
+  menu :project_menu, :kanban, { controller: 'kanban', action: 'index' }, caption: :label_kanban, after: :issues, param: :project_id
   menu :top_menu, :kanban, { controller: 'kanban', action: 'index', :project_id => nil }, caption: :label_kanban, first: true ,
         :if => Proc.new{ User.current.allowed_to?({:controller => 'kanban', :action => 'index'}, nil, {:global => true}) && Setting.plugin_redmine_kanban['kanban_show_in_top_menu'].to_i > 0  }
 
