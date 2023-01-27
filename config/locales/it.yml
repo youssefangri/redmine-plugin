@@ -1,0 +1,6 @@
+it:
+  label_my_boards: Le mie tabelle Agile
+  label_swimlanes: Swim lanes
+  label_default_board: Tabella di default
+  permission_save_boards_kanban: Salvataggio delle tabelle
+  field_block_reason: Bloccato

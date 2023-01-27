@@ -1,0 +1,7 @@
+zh-TW:
+  label_my_boards: 我的敏捷看板
+  permission_manage_public_agile_queries: 管理公共敏捷看板
+  label_swimlanes: 泳道
+  label_default_board: 默認看板
+  field_block_reason: 鎖定
+  label_assign_to_me: 分派給我

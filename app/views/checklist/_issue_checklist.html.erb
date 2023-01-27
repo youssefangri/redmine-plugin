@@ -1,0 +1,14 @@
+<% if @issue.project.module_enabled?('checklists') %>
+			 <hr />
+	<div id="questionlist" init_issues="<%= @issues.to_json %>"></div>
+
+	<script>
+		window.issue = '<%= @issue.id %>'
+		window.checklists_settings = '{"can_add": "<%= @issue.can_add_checklist? %>", "can_add_visa": "<%= @issue.can_add_personal_checklist? %>", "can_save_as_template": "<%= @issue.can_save_as_template? %>"}';
+	</script>
+
+	<%= render :partial => 'common/settings' %>
+
+		<%= javascript_include_tag 'checklist.js', plugin: 'redmine_kanban' %>
+
+<% end %>

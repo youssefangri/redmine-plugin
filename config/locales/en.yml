@@ -1,0 +1,131 @@
+# English strings go here for Rails i18n
+en:
+
+  project_module_kanban: 'Kanban'
+  label_kanban: "Kanban"
+  project_module_checklists: 'Checklists'
+  settings_tab_label_checklist_templates: "Checklists"
+  label_checklist_plural: "Checklists"
+  label_checklist: "Checklist"
+  label_personal_checklist_plural: "Personal checklists"
+  label_personal_checklist: "Personal checklist"
+
+  field_block_reason: "Block"
+  label_issue_blocked_at: 'Blocked at'
+#  filters_label_block_reason: 'Blocked'
+  field_blocked_at: 'Blocked at'
+  kanban_rejected_status: "You dont have enouth permissions to set this status"
+  label_swimlanes: "Swim lanes"
+
+
+  error_question_not_assignable: '"%{name}" can not be assigned to this issue'
+
+
+  permission_manage_global_checklist_templates: 'Manage global checklist templates'
+  permission_manage_project_checklist_templates: 'Manage project checklist templates'
+  permission_manage_global_assigned_checklist_templates: 'Manage global assigned checklist templates'
+  permission_manage_project_assigned_checklist_templates: 'Manage project assigned checklist templates'
+  permission_manage_any_checklist_assigned: 'Manage any assigned checklist'
+  permission_save_boards_kanban: "Saving board"
+  permission_manage_public_boards_kanban: "Edit public boards"
+  permission_view_kanban: "View"
+  error_no_privileges: "No privileges"
+
+
+  label_my_kanban_queries: 'My boards'
+  label_kanban_query_plural: 'Shared boards'
+
+  invalid_action_attribute: "Invalid action parameter"
+  label_show_in_top_menu: 'Show in top menu'
+  label_show_in_app_menu: 'Show in application menu'
+  label_checklist_item: "Checklist item"
+# for show in system history
+  journal_block_deleted: 'Block deleted'
+  # status_active: active - maybe
+  journal_block_added: 'Block added'
+  # maybe status_locked: locked
+
+  # for show in checklist history
+  history_checklist_item_add_attach: 'added file <strong>"%{value}"</strong>  <strong>"%{descr}"</strong>'
+  history_checklist_item_create: 'created item %{value} assigned to %{assigned_to}'
+  history_checklist_item_done: 'set <i>done</i> <s>%{value}</s>'
+  history_checklist_item_undone: 'set <i>undone</i> %{value}'
+  history_checklist_item_answer: 'answered <strong>"%{value}"</strong>'
+
+
+  history_attach_renamed: 'renamed attachment to <strong>"%{value}"</strong> from <strong>"%{old_value}"</strong>'
+  history_attach_description_changed: 'changed description to <strong>"%{value}"</strong> from <strong>"%{old_value}"</strong>'
+  history_attach_delete: 'deleted attachment <strong>"%{old_value}"</strong>'
+
+  # frontend
+  showIsDone: 'Show completed'
+  hideIsDone: 'Hide completed'
+  check: 'Completed by'
+  addDeadline: 'Set due date...'
+  editDeadline: 'Edit due date'
+  removeDeadline: 'Remove due date'
+  addResponsible: 'Assign >'
+
+  info_my_tasks_button: "Tasks assigned to me or my groups"
+  info_locked_button: "Tasks with blocks"
+  my_group_tasks: "My group"
+
+  copyText: 'Copy text'
+  editComment: 'Change answer'
+  removeComment: 'Delete answer'
+  removeAssignee: 'Delete assigner'
+  createChecklistTemplate: 'Save to template'
+
+  areYouSureToAddTemplate: 'Вы уверены что хотите добавить шаблон'
+
+  createTemplate: 'New template'
+  autoInstallTemplate: 'Auto add template'
+  checklistElements: 'Checklist items'
+  noTemplateCreated: 'No templates'
+
+
+  bindTemplateToProject: 'bind template to project'
+  newTemplateElement: 'New checklist item'
+
+  errors_createVisaTemplateTaskError: 'For the "personal" template type, all fields must be filled in'
+  errors.defaultError: 'Something went wrong! Refresh the page'
+  errors.statusChangeError: 'Status change error'
+  errors_error: 'Error'
+
+  errors.maxFileSizeError: 'This file cannot be uploaded because it exceeds the maximum allowed file size'
+  #  #    //  error_attachment_too_big:
+  errors.fileTypeError: 'This file type is not allowed'
+  #  #    //  error_attachment_extension_not_allowed: 'Расширение %{extension} запрещено',
+  errors.statusOrderError: 'Error on change sort order'
+
+  errors.checklistTasksEmpty:  'Missing checklist item for user assignment'
+  errors.checklistItemAlreadyAssigned: 'The checklist item(s) is already assigned to this user'
+
+  success: 'Success'
+  withoutPerformer: 'No assigner'
+  answer_from: 'Answer from'
+
+  size: 'Size'  # //  при выводе ошибки только
+  fileType: 'type'
+
+  label_new_personal_checklist: 'New personal checklist'
+  label_new_checklist: 'New checklist'
+
+  label_default_board: Default board
+  permission_view_checklists: View checklist
+  permission_done_checklists: Done checklist items
+  permission_edit_checklists: Edit checklist items
+  label_checklist_template_category_plural: Template categories
+  label_checklist_template_category_new: New category
+  label_checklist_templates: Checklist templates
+  label_checklist_template: Checklist template
+  label_checklist_new_checklist_template: New checklist template
+  field_template_items: Template items
+  label_add_checklists_from_template: Add from template
+  label_checklists_from_template: From template
+  label_checklist_import_hint: 'Multiple values allowed (one line for each value)'
+  label_checklists_must_be_completed: All checklists of an issue must be done before closing
+
+
+  #Free
+  message_disabled_create_more_one: "You cannot create more than one checklist in the free version"

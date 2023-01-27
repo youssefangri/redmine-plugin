@@ -1,0 +1,129 @@
+# Russian strings go here for Rails i18n
+ru:
+
+  project_module_kanban: 'Канбан'
+  label_kanban: "Канбан"
+  project_module_checklists: 'Чек-листы'
+  settings_tab_label_checklist_templates: "Чек-листы"
+  label_checklist_plural: "Чек-листы"
+  label_checklist: "Чек-лист"
+  label_personal_checklist_plural: "Визы"
+  label_personal_checklist: "Виза"
+
+
+  label_issue_blocked_at: 'Дата блокировки'
+  field_blocked_at: 'Дата блокировки'
+  kanban_rejected_status: "Недостаточно прав для установки этого статуса"
+  label_swimlanes: "Плавательные дорожки"
+
+
+  error_question_not_assignable: 'Исполнитель "%{name}" не может быть назначен для этой задачи'
+
+
+  permission_manage_global_checklist_templates: 'Управление общими шаблонами чеклистов'
+  permission_manage_project_checklist_templates: 'Управление шаблонами чеклистов проекта'
+  permission_manage_global_assigned_checklist_templates: 'Управление общими шаблонами чеклистов типа "виза"'
+  permission_manage_project_assigned_checklist_templates: 'Управление шаблонами чеклистов типа "виза" проекта'
+  permission_manage_any_checklist_assigned: 'Управление любыми чеклистами типа "виза"'
+  permission_save_boards_kanban: "Сохранение досок"
+  permission_manage_public_boards_kanban: "Редактирование публичных досок"
+  permission_view_kanban: "Просмотр"
+  error_no_privileges: "Недостаточно прав"
+
+
+  label_my_kanban_queries: 'Мои доски'
+  label_kanban_query_plural: 'Общие доски'
+
+  invalid_action_attribute: "Invalid action parameter"
+  label_show_in_top_menu: 'Показывать в верхнем меню'
+  label_show_in_app_menu: 'Показывать в меню приложения'
+  label_checklist_item: "Пункт чек-листа"
+# for show in system history
+  journal_block_deleted: 'Блокировка снята'
+  journal_block_added: 'Установлена блокировка'
+
+  # for show in checklist history
+  history_checklist_item_add_attach: 'добавил(a) файл <strong>"%{value}"</strong> с описанием <strong>"%{descr}"</strong>'
+  history_checklist_item_create: 'создал(a) %{value} и назначил на %{assigned_to}'
+  history_checklist_item_done: 'отметил(a) <s><b>выполненным</b></s>'
+  history_checklist_item_undone: 'отметил(a) <b>невыполненным</b>'
+  history_checklist_item_answer: 'ответил(a) <strong>"%{value}"</strong>'
+
+
+  history_attach_renamed: 'переименовал(a) вложение на <strong>"%{value}"</strong> с <strong>"%{old_value}"</strong>'
+  history_attach_description_changed: 'изменил(a) описание на <strong>"%{value}"</strong> с <strong>"%{old_value}"</strong>'
+  history_attach_delete: 'удалил(a) вложение <strong>"%{old_value}"</strong>'
+
+
+  # frontend
+  showIsDone: 'Показать отмеченные'
+  hideIsDone: 'Скрыть отмеченные'
+  check: 'Отметил(а)'
+  addDeadline: 'Назначить срок'
+  editDeadline: 'Изменить срок'
+  removeDeadline: 'Удалить срок'
+  addResponsible: 'Назначить >'
+#  editResponsible: 'Назначить >'
+#  my_tasks: 'Мои'
+  info_my_tasks_button: "Задачи назначенные на меня или группы в которые я вхожу"
+  info_locked_button: "Задачи с блокировкой"
+
+  copyText: 'Копировать текст'
+  editComment: 'Изменить ответ'
+  removeComment: 'Удалить ответ'
+  removeAssignee: 'Удалить ответственного'
+#  blocked: 'Заблокирована'
+  #  //  label_blocked_by: 'блокируется',   label_board_locked: 'Заблокирована',
+  #  //  не очень подходит по англ locked а вообще нужно?
+  #  // visibility: 'Видимость',
+  createChecklistTemplate: 'Сохранить чеклист в шаблон'
+
+  areYouSureToAddTemplate: 'Вы уверены что хотите добавить шаблон'
+#  listOfTemplates: 'Список готовых шаблонов'
+  createTemplate: 'Новый шаблон'
+  autoInstallTemplate: 'Автоматический устанавливать шаблон'
+  checklistElements: 'Элементы чеклиста'
+#  addElement: 'Добавить элемент'
+  noTemplateCreated: 'Нет доступных шаблонов'
+
+
+  bindTemplateToProject: 'Привязать шаблон к проекту'
+  newTemplateElement: 'Добавить новый элемент шаблона'
+
+  errors_createVisaTemplateTaskError: 'Для шаблона типа "Виза" все поля должны быть заполнены'
+  errors.defaultError: 'Что-то пошло не так! Обновите страницу'
+  errors.statusChangeError: 'Ошибка при смене статуса'
+  errors_error: 'Ошибка'
+  errors.maxFileSizeError: 'Размер файла выше максимально допустимого'
+  #  #    //  error_attachment_too_big:
+  #          //  'Этот файл нельзя загрузить из-за превышения максимального размера файла (%{ max_size })',
+  errors.fileTypeError: 'Данный тип файла не разрешён'
+  #  #    //  error_attachment_extension_not_allowed: 'Расширение %{extension} запрещено',
+  errors.statusOrderError: 'Ошибка при смене сортировки'
+#  errors.recordAlreadyUpdated: 'Кто-то уже обновил данные перед вами. Обновить страницу для просмотра?' notice_issue_update_conflict   notice_locking_conflict
+  errors.checklistTasksEmpty: 'Отсутствуют пункт чеклиста для назначения пользователя'
+  errors.checklistItemAlreadyAssigned: 'Пункт(ы) чек-листа уже назначен на этого пользователя'
+
+  success: 'Успешно'
+  withoutPerformer: 'Без исполнителя'
+  answer_from: 'Ответил(а)'
+
+  size: 'Размер'  # //  при выводе ошибки только
+  fileType: 'Тип файла'
+  label_new_personal_checklist: 'Новая Виза'
+  label_new_checklist: 'Новый чек-лист'
+
+  permission_view_checklists: Просматривать чеклисты
+  permission_done_checklists: Выполнять чеклисты
+  permission_edit_checklists: Редактировать чеклисты
+  label_checklist_template_category_plural: Категории шаблонов чеклистов
+  label_checklist_template_category_new: Новая категория шаблонов чеклистов
+  label_checklist_templates: Шаблоны чеклистов
+  label_checklist_new_checklist_template: Новый шаблон чеклистов
+  field_template_items: Элементы шаблона
+  label_checklist_template: Шаблон чеклистов
+  label_add_checklists_from_template: Добавить из шаблона
+  label_checklists_from_template: Из шаблона
+  label_checklist_import_hint: 'Для ввода нескольких значений вводите по одному на строку'
+  label_checklists_must_be_completed: Чтобы закрыть задачу, должны быть выполнены все пункты чеклистов
+  label_assign_to_me: Назначить мне

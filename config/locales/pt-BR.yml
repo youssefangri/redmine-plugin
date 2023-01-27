@@ -1,0 +1,11 @@
+pt-BR:
+  label_my_boards: Meus quadros ágeis
+  permission_manage_public_agile_queries: Gerenciar quadros ágeis publicos
+  label_swimlanes: Rais do quadro
+  label_default_board: Quadro padrão
+  permission_save_boards_kanban: Salvando quadro
+  label_checklist_plural: Checklist
+  permission_view_checklists: Ver checklist
+  permission_done_checklists: Remover itens do checklist
+  permission_edit_checklists: Alterar itens do checklist
+  field_block_reason: Bloqueado

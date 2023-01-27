@@ -1,0 +1,6 @@
+<script>
+    window.current_user = '{"id": <%=  User.current.id %>, "name": "<%=  User.current.name %>", "language": "<%= locale.to_s %>", "api_key": "<%= User.current.api_key %>", "group_ids": <%= User.current.group_ids.to_json %>}'
+    window.translations = `<%= raw build_translations() %>`
+    window.settings = `{"attachment_max_size": "<%= Setting.attachment_max_size.to_i.kilobytes %>", "attachment_extensions_denied": "<%= Setting.attachment_extensions_denied.strip %>", "attachment_extensions_allowed": "<%= Setting.attachment_extensions_allowed.strip %>"}`;
+</script>
+

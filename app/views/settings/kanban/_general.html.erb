@@ -1,0 +1,68 @@
+<p>
+  <label><%= l(:label_show_in_top_menu) %></label>
+  <span id="watchers_inputs">
+    <span class="floating" style="margin-left: 0px;">
+    <%= hidden_field_tag 'settings[kanban_show_in_top_menu]', 0 %>
+    <%= check_box_tag 'settings[kanban_show_in_top_menu]', 1, @settings["kanban_show_in_top_menu"].to_i > 0 %>
+    </span>
+  </span>
+</p>
+
+<p>
+  <label><%= l(:label_show_in_app_menu) %></label>
+  <span id="watchers_inputs">
+    <span class="floating" style="margin-left: 0px;">
+    <%= hidden_field_tag 'settings[kanban_show_in_app_menu]', 0 %>
+    <%= check_box_tag 'settings[kanban_show_in_app_menu]', 1, @settings["kanban_show_in_app_menu"].to_i > 0 %>
+    </span>
+  </span>
+</p>
+
+<p>
+  <label for="select_all"><%= l(:button_check_all) %></label>
+  <span>
+    <span class="floating" style="margin-left: 0px;">
+      <input id="select_all" type="checkbox">
+    </span>
+  </span>
+</p>
+
+<fieldset class="box">
+  <legend><%= toggle_checkboxes_link("#enabled_in_projects input[type=checkbox]:enabled") %><%= l(:label_project_plural) %></legend>
+  <!--  <p><%#= f.check_box :is_for_all, :data => {:disables => '#custom_field_project_ids input'} %></p>-->
+
+  <div id="custom_field_project_ids">
+    <% project_ids = Project.all.select { |sub| sub.module_enabled?('kanban') }.map(&:id) %>
+    <%= render_project_nested_lists(Project.all) do |p|
+      content_tag('label', check_box_tag('settings[project_ids][]', p.id, project_ids.include?(p.id), :id => nil) + ' ' + p)
+    end %>
+  </div>
+</fieldset>
+
+<script>
+'use strict';
+
+document.addEventListener('DOMContentLoaded', _selectAllCheckboxes);
+
+function _selectAllCheckboxes() {
+  const selectAllCheckbox = document.getElementById('select_all');
+  const checkboxesContainer = document.getElementById('custom_field_project_ids');
+  const checkboxes = [...checkboxesContainer.querySelectorAll('label > input')];
+
+  selectAllCheckbox.checked = _isCheckboxesChecked(checkboxes);
+
+  selectAllCheckbox.addEventListener('change', (event) => _onToggleSelectHandler(event, checkboxes));
+};
+
+function _onToggleSelectHandler(event, checkboxes) {
+  const {target: {checked}} = event;
+
+  for (const checkbox of checkboxes) {
+    checkbox.checked = checked;
+  }
+};
+
+function _isCheckboxesChecked(checkboxes = []) {
+  return checkboxes.every((checkbox) => checkbox && checkbox.checked);
+};
+</script>

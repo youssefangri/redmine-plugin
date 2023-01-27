@@ -1,0 +1,7 @@
+pt:
+  label_my_boards: Meus quadros ágeis
+  permission_manage_public_agile_queries: Gerenciar quadros ágeis publicos
+  label_swimlanes: Rais do quadro
+  label_default_board: Quadro padrão
+  permission_save_boards_kanban: Salvando quadro
+  field_block_reason: Proteger
