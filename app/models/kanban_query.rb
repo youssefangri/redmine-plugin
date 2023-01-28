@@ -94,11 +94,11 @@ class KanbanQuery < IssueQuery
   def build_from_params(params, defaults={})
     super
     if params[:s].nil? || params[:s].empty?
-      res =  available_statuses.select {|c| c.is_closed == true }
+      options[:statuses] = available_statuses.collect {|s| s.id }
     else
       res =  available_statuses.select{|s| params[:s].include? s.id.to_s  }
+      options[:statuses] = res.collect {|s| s.id }
     end
-    options[:statuses] = res.collect {|s| s.id }
     if self.group_by_column && self.group_by_column.name
       a = column_names
       a << self.group_by_column.name
