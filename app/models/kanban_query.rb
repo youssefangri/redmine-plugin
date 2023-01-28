@@ -88,7 +88,7 @@ class KanbanQuery < IssueQuery
   def initialize(attributes=nil, *args)
     super attributes
     options[:statuses]=[]
-    self.filters = self.filters == {'status_id' => {:operator => "=", :values => [""]}} ? KanbanQuery.default_filters : self.filters
+    self.filters = self.filters ? self.filters : KanbanQuery.default_filters
   end
 
   def build_from_params(params, defaults={})
