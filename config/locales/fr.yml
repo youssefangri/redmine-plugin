@@ -9,7 +9,7 @@ fr:
 
 
   project_module_kanban: 'Kanban'
-  label_kanban: "Канбан"
+  label_kanban: "Kanban"
   project_module_checklists: 'Listes de contrôle'
   settings_tab_label_checklist_templates: "Listes de contrôle"
   label_checklist_plural: "Listes de contrôle"

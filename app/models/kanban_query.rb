@@ -80,7 +80,7 @@ class KanbanQuery < IssueQuery
     # User.current.group_ids.each { |group_id| values.push(group_id.to_s) }
 
     {
-      'status_id' => { operator: 'o', values: [] },
+      'status_id' => { operator: 'a', values: [] },
       # 'assigned_to_id' => { operator: '=', values: ['me'] }
     }
   end
@@ -88,7 +88,7 @@ class KanbanQuery < IssueQuery
   def initialize(attributes=nil, *args)
     super attributes
     options[:statuses]=[]
-    self.filters = self.filters == {'status_id' => {:operator => "o", :values => [""]}} ? KanbanQuery.default_filters : self.filters
+    self.filters = self.filters == {'status_id' => {:operator => "a", :values => []}} ? KanbanQuery.default_filters : self.filters
   end
 
   def build_from_params(params, defaults={})
